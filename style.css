@@ -10,7 +10,7 @@ body {
 
 .header {
   height: 250px;
-  background-color: #ededed;
+  background-color: #fafafa;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -26,7 +26,7 @@ body {
 .symbole {
   width: 150px;
   height: 150px;
-  background-color: #c5c5c5;
+  background-color: #bdc5e7;
   border-radius: 50%;
 }
 
@@ -41,7 +41,7 @@ body {
 
 .menu {
   height: 50px;
-  background-color: #f8f8f8;
+  background-color: #e3e8f3;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -60,7 +60,7 @@ body {
 /* HERO */
 .hero {
   height: 345px;
-  background-color: #c5c5c5;
+  background-color: #bdc5e7;
   display: flex;
   align-items: center;
   padding: 0 10.5%;
@@ -88,7 +88,7 @@ body {
   display: flex;
   width: 345px;
   height: 63px;
-  background-color: #aaa8a8;
+  background-color: #e3e8f3;
   align-items: center;
   justify-content: center;
   color: #111;
@@ -98,26 +98,32 @@ body {
 
 /* REALISATION */
 .realisations {
-  background-color: #f0f0f0;
-  padding: 32px 3.6% 75px;
+  overflow: hidden;
 }
 
 .realisations h2,
 .services > h2 {
   text-align: center;
   font-size: 23px;
-  margin: 0 0 18px;
+  margin: 0 0 px;
 }
 
 .galerie {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
+  gap: 25px;
+}
+
+.galerie img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  display: block;
 }
 
 .image {
   width: 100%;
-  height: 242px;
+  height: 500px;
   background-color: #c5c5c5;
 }
 
@@ -135,28 +141,42 @@ body {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 26px;
+  align-items: start;
 }
 
-.carte .image {
-  height: 242px;
-  margin-bottom: 14px;
+.carte {
+  min-width: 0;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+.carte img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  display: block;
 }
 
 .carte h3 {
-  font-size: 16px;
-  margin: 0 0 30px;
+  font-size: 17px;
+  line-height: 1.4;
+  margin: 0 0 12px;
+}
+
+.carte-contenu {
+  padding: 18px;
 }
 
 .carte p {
-  font-size: 12px;
-  line-height: 1.3;
-  margin: 0 0 18px;
+  font-size: 13px;
+  line-height: 1.6;
+  margin: 0 0 16px;
 }
 
-.carte > a {
+.carte a {
   font-size: 12px;
-  font-weight: bold;
-  color: #111;
+  font-weight: 600;
+  color: var(--noir, #24211e);
   text-decoration: none;
 }
 
