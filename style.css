@@ -59,22 +59,19 @@ body {
 
 /* HERO */
 .hero {
-  height: 345px;
+  height: 200px;
   background-color: #bdc5e7;
-  display: flex;
   align-items: center;
-  padding: 0 10.5%;
+  display: flex;
   overflow: hidden;
-}
-
-.hero-contenu {
-  width: 345px;
 }
 
 .hero h2 {
   font-size: 34px;
   font-weight: normal;
   margin: 0 0 20px;
+  display: flex;
+  position: center;
 }
 
 .hero img {
@@ -93,19 +90,19 @@ body {
   justify-content: center;
   color: #111;
   text-decoration: none;
-  font-weight: bold;
 }
 
 /* REALISATION */
 .realisations {
   overflow: hidden;
+  margin: 30px;
 }
 
 .realisations h2,
 .services > h2 {
   text-align: center;
   font-size: 23px;
-  margin: 0 0 px;
+  margin: 30px;
 }
 
 .galerie {
@@ -183,7 +180,7 @@ body {
 /* Pied de page */
 .footer {
   min-height: 135px;
-  background-color: #d2d2d2;
+  background-color: #e5c9f3;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -201,7 +198,7 @@ body {
   gap: 35px;
 }
 
-/* Adaptation aux petits écrans */
+/* MQ */
 @media (max-width: 700px) {
   .menu {
     gap: 15px;
